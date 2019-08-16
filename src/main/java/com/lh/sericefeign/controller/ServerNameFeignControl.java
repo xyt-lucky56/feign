@@ -1,6 +1,6 @@
 package com.lh.sericefeign.controller;
 
-import com.lh.VO.ResultVO;
+//import com.lh.VO.ResultVO;
 import com.lh.sericefeign.FeignInterface.AuthorityFeignInterface;
 import com.lh.sericefeign.FeignInterface.ServerNameFeignInterface;
 import io.jmnarloch.spring.cloud.ribbon.support.RibbonFilterContextHolder;
@@ -32,16 +32,16 @@ public class ServerNameFeignControl {
         return serverNameFeignInterface.testTimeOut(timeOut);
     }
 
-    @PostMapping(value = "/useLogOfManagerInBS")
-    public ResultVO useLogOfManagerInBS(@RequestParam(value = "num") String num
-            , @RequestParam(value = "passWord") String passWord) {
-        return authorityFeignInterface.useLogOfManagerInBS(num, passWord);
-    }
-
-    @PostMapping("/selectMySystemNameList")
-    public ResultVO selectMySystemNameList(@RequestParam(value = "id") String id) {
-        return authorityFeignInterface.selectMySystemNameList(id);
-    }
+//    @PostMapping(value = "/useLogOfManagerInBS")
+//    public ResultVO useLogOfManagerInBS(@RequestParam(value = "num") String num
+//            , @RequestParam(value = "passWord") String passWord) {
+//        return authorityFeignInterface.useLogOfManagerInBS(num, passWord);
+//    }
+//
+//    @PostMapping("/selectMySystemNameList")
+//    public ResultVO selectMySystemNameList(@RequestParam(value = "id") String id) {
+//        return authorityFeignInterface.selectMySystemNameList(id);
+//    }
 
     @PostMapping(value = "/myVersion")
     public String myVersion() {
