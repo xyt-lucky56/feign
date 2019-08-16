@@ -27,13 +27,13 @@
 
 	<dependencies>
 		<!--返回结构体-->
-		<dependency>
-			<groupId>resultVO</groupId>
-			<artifactId>resultVO</artifactId>
-			<version>1.0</version>
-			<scope>system</scope>
-			<systemPath>${basedir}/lib/resultVO.jar</systemPath>
-		</dependency>
+		<!--<dependency>-->
+			<!--<groupId>resultVO</groupId>-->
+			<!--<artifactId>resultVO</artifactId>-->
+			<!--<version>1.0</version>-->
+			<!--<scope>system</scope>-->
+			<!--<systemPath>${basedir}/lib/resultVO.jar</systemPath>-->
+		<!--</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
